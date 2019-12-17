@@ -1,5 +1,5 @@
 %% Compute neutral face
-imgFolder = '/Users/arthur/Documents/UCSD/ECE 269/Project/images';
+imgFolder = '~/images';
 neutral_face_filename = dir(fullfile(imgFolder, '*a.jpg'));
 neutral_face_filename = natsortfiles({neutral_face_filename.name});
 
@@ -35,7 +35,7 @@ title('Singular Values');
 hold on;
 
 
-%% (b) Reconstruct one of 190 individuals¡¦ neutral expression image using different number of PCs. (choose 1a.jpg)
+%% (b) Reconstruct one of 190 individualsÂ¡Â¦ neutral expression image using different number of PCs. (choose 1a.jpg)
 N = [1, 30, 70, 100, 130, 150, 170, 190];   % Number of PCs
 
 test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/1a.jpg');
@@ -65,7 +65,7 @@ title('Mean Squared Error of neutral face (1a.jpg)');
 hold on;
 
 
-%% (c) Reconstruct one of 190 individuals¡¦ smile expression image using different number of PCs. (choose 1b.jpg)
+%% (c) Reconstruct one of 190 individualsÂ¡Â¦ smile expression image using different number of PCs. (choose 1b.jpg)
 test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/1b.jpg');
 test_img = reshape(test_img, [num_of_pixel, 1]);
 mse = zeros(numel(N), 1);
@@ -93,7 +93,7 @@ title('Mean Squared Error of smile face (1b.jpg)');
 hold on;
 
 
-%% (d) Reconstruct one of the other 10 individuals¡¦ neutral expression image using different number of PCs. (choose 191a.jpg)
+%% (d) Reconstruct one of the other 10 individualsÂ¡Â¦ neutral expression image using different number of PCs. (choose 191a.jpg)
 test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/191a.jpg');
 test_img = reshape(test_img, [num_of_pixel, 1]);
 mse = zeros(numel(N), 1);
@@ -148,7 +148,7 @@ title('Reconstructed Image using All PCs');
 hold on;
 
 
-%% (f) Rotate one of 190 individuals¡¦ neutral expression image with different degrees and try to reconstruct it using all PCs. (choose 1a.jpg)
+%% (f) Rotate one of 190 individualsÂ¡Â¦ neutral expression image with different degrees and try to reconstruct it using all PCs. (choose 1a.jpg)
 test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/1a.jpg');
 
 figure;
