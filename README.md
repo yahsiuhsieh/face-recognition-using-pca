@@ -1,6 +1,6 @@
 # Face Recognition using Principal Component Analysis
 
-Here I implement face recognition based on [this paper](https://sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf), which shows how to use Principal Component Analysis (PCA) for Face Recognition.
+This repository is for face recognition based on [this paper](https://sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf), which shows how to use Principal Component Analysis (PCA) for Face Recognition.
 
 The paper puts forward a simple yet effective idea of using eigenfaces (obtained via PCA) to perform unsupervised face recognition. Read and understand the basic principle, and then conduct the following numerical experiments to implement and test the eigenface-based face recognition algorithm.
 
@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This repository is based on MATLAB.
+This repository is based on MATLAB, so you should have MATLAB installed before running this repo.
 
 ## Code organization
 
@@ -47,6 +47,8 @@ Here I have conducted 6 experiments
 * Here is the one of the reconstructed result ![reconstructed neutral img](https://github.com/arthur960304/face-recognition-using-pca/blob/master/result/reconstruct_neutral_testimg.jpg)
 
 * Here is the MSE example for above reconstructed result ![MSE of reconstruction vs PCs](https://github.com/arthur960304/face-recognition-using-pca/blob/master/result/mse_neutral_testimg.jpg)
+
+* Here is the result for trying to reconstruct a non-human image ![car](https://github.com/arthur960304/face-recognition-using-pca/blob/master/result/car.jpg)
 
 
 ## Authors
