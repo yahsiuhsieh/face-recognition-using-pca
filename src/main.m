@@ -66,7 +66,7 @@ hold on;
 
 
 %% (c) Reconstruct one of 190 individuals¡¦ smile expression image using different number of PCs. (choose 1b.jpg)
-test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/1b.jpg');
+test_img = imread('~/images/1b.jpg');
 test_img = reshape(test_img, [num_of_pixel, 1]);
 mse = zeros(numel(N), 1);
 
@@ -94,7 +94,7 @@ hold on;
 
 
 %% (d) Reconstruct one of the other 10 individuals¡¦ neutral expression image using different number of PCs. (choose 191a.jpg)
-test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/191a.jpg');
+test_img = imread('~/images/191a.jpg');
 test_img = reshape(test_img, [num_of_pixel, 1]);
 mse = zeros(numel(N), 1);
 
@@ -122,7 +122,7 @@ hold on;
 
 
 %% (e) Use any other non-human image and try to reconstruct it using all PCs.
-test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/audi.jpg');
+test_img = imread('~/images/audi.jpg');
 test_img = rgb2gray(test_img);
 test_img = imresize(test_img, [193 162]);
 test_img = reshape(test_img, [num_of_pixel, 1]);
@@ -149,7 +149,7 @@ hold on;
 
 
 %% (f) Rotate one of 190 individuals¡¦ neutral expression image with different degrees and try to reconstruct it using all PCs. (choose 1a.jpg)
-test_img = imread('/Users/arthur/Documents/UCSD/ECE 269/Project/images/1a.jpg');
+test_img = imread('~/images/1a.jpg');
 
 figure;
 for i = 1 : 6
