@@ -34,7 +34,8 @@ This repository is based on MATLAB, so you should have MATLAB installed before r
 ## Implementations
 
 1. Computing PCs
-Given a set of M training images (all of size $L − by − N$), we can represent them by a set of LN − by − 1 vectors: Γ1, Γ2, · · · , ΓM . The computation of the PCs (eignefaces) is done by the following:
+
+Given a set of M training images (all of size $ L − by − N $), we can represent them by a set of LN − by − 1 vectors: Γ1, Γ2, · · · , ΓM . The computation of the PCs (eignefaces) is done by the following:
 
 ## Experiments
 
