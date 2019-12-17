@@ -23,6 +23,7 @@ This repository is based on MATLAB, so you should have MATLAB installed before r
     │   ├── natsort.m           # Tools to read files sequentially
     │   ├── natsortfiles.m      # Tools to read files sequentially
     │   └── reconstruct.m       # Reconstruct an image
+    ├── implementation.pdf      # The detailed implementations of this project
     └── README.md
 
 ## Running the tests
@@ -33,9 +34,7 @@ This repository is based on MATLAB, so you should have MATLAB installed before r
 
 ## Implementations
 
-1. Computing PCs
-
-Given a set of M training images (all of size *L − by − N*), we can represent them by a set of *LN − by − 1* vectors: $$Γ_1, Γ2, · · · , ΓM$$ . The computation of the PCs (eignefaces) is done by the following:
+* See this [file](https://github.com/arthur960304/face-recognition-using-pca/blob/master/implementation.pdf) for detailed implementations.
 
 ## Experiments
 
